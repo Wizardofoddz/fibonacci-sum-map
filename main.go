@@ -13,7 +13,7 @@ import (
 func main() {
 	inputBytes, err := ioutil.ReadAll(bufio.NewReader(os.Stdin))
 	if err != nil {
-		log.Panicln("Error reading stdin:", err.Error())
+		log.Panicln("Error reading from stdin:", err.Error())
 	}
 
 	input := strings.Trim(string(inputBytes), "\n\t ")
